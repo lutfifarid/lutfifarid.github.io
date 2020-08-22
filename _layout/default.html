@@ -3,30 +3,31 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>About | Your awesome title</title>
-<meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="About" />
+  <meta name="generator" content="Jekyll v4.1.1" />
+  <title>{{ page.title | default: site.title }}</title>
+<meta property="og:title" content="{{ page.title | default: site.title }}" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<link rel="canonical" href="http://localhost:4000/about/" />
-<meta property="og:url" content="http://localhost:4000/about/" />
-<meta property="og:site_name" content="Your awesome title" />
+<meta name="description" content="{{ page.description | default: site.description }}" />
+<meta property="og:description" content="{{ page.description | default: site.description }}" />
+<link rel="canonical" href="{{site.baseurl}}" />
+<meta property="og:url" content="{{site.baseurl}}" />
+<meta property="og:site_name" content="{{site.title}}" />
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css">
 <link rel="stylesheet" href="{{site.baseurl}}/css/custom.css">
 </head>
-<body><header class="site-header" role="banner">
+  <body>
+  <header class="site-header" role="banner">
+    {% include navigation.html %}
+  </header>
 
-  {% include navigation.html %}
-
-
-</header>
-
-<main class="page-content" aria-label="Content">
-  {{content}}
-    </main>
+  <main class="page-content" aria-label="Content">
+    {{content}}
+  </main>
   
   </body>
 {% include footer.html %}
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>    
+<script src="{{site.baseurl}}/js/home.js"></script>
 </html>
