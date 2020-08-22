@@ -1,0 +1,13 @@
+
+
+@media screen and (min-width: 800px) { 
+    .author-title { margin-top: 135px; } 
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px){ 
+    .author-title { margin-top: 90px; } 
+}
+
+@media screen and (min-width: 200px) and (max-width: 400px){ 
+    .author-title { margin-top: 45px; } 
+}
