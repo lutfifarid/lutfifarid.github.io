@@ -4,7 +4,7 @@
 // Cool loopy loop of adjectives I like :)
 $(document).ready(function() {
 
-var items = ["young daddy", "SQL-caster", "data enthusiast", "insight seeker", "code explorer"],
+var items = ["SQL-caster", "data enthusiast", "insight seeker", "code explorer"],
     $text = $( '#about-me span' ),
     delay = 2; //seconds
 
